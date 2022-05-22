@@ -1,0 +1,11 @@
+{% load static %}
+{% block content %}
+<head><link rel="stylesheet" type="text/css" href="{% static 'useradmin/css/standard.css' %}"/></head>
+<h1>Log in</h1>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Log in</button>
+</form>
+<p class="basicsignup_p"><a class="basicsignup" href="{% url 'signup' %}">新たにアカウントを登録</a></p>
+{% endblock %}

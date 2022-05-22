@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang=""ja>
+    <head>
+        <title>SIGNUP</title>
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'useradmin/css/standard.css' %}"/>
+    </head>
+</html>
+<body>
+    <h1>登録情報を入力してください</h1>
+    <p>UsernameとEmail addressはアカウント識別のために使用します。使っていないもので構いません。</p>
+    <form method="post" action="{% url 'signup' %}">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="signup">
+    </form>
+    <p class="basiclogout_p"><a class="basiclogout" href="{% url 'login' %}">既にアカウントをお持ちの方</a></p>
+</body>

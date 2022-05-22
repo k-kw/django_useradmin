@@ -1,0 +1,55 @@
+.basiclogout{
+    background-color: rgb(255,0,0);
+    color: rgb(255,255,255);
+    padding:0.5%;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.basiclogout:hover{
+    background-color: rgb(240, 110, 121);
+    transition: 1s;
+}
+.basiclogout_p{
+    text-align: right;
+}
+
+
+.basicimgup{
+    background-color: rgb(0,0,255);
+    color: rgb(255,255,255);
+    padding:0.5%;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.basicimgup:hover{
+    background-color: rgb(153, 212, 229);
+    transition: 1s;
+}
+.basicimgup_p{
+    text-align: left;
+}
+
+
+
+p{
+    font-size: 100%;
+}
+
+
+.basicsignup{
+    background-color: rgb(0,0,255);
+    color: rgb(255,255,255);
+    padding:0.5%;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.basicsignup:hover{
+    background-color: rgb(110, 166, 240);
+    transition: 1s;
+}
+.basicsignup_p{
+    text-align: right;
+}
